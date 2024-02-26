@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>
+      Sign in to freeCodeCamp.org
+    </title>
+    <style>
+      .fixed-top-bar{
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        justify-content: center; 
+        top: 0px;
+        left:0px;
+        right:0px;
+        background-color: rgb(10, 10, 35);
+      }
+
+      .top-bar{
+        flex: 1;
+        text-align: center;
+        color: white;
+        font-family: Lato, sans-serif;
+        font-size: 30px;
+      }
+
+      .parent{
+         display: flex;
+          flex-direction: row;
+          margin-top: 50px;
+      }
+
+      .border{
+        flex: 0.9;
+        border:3px solid black;
+        align-items: center;
+        text-align: center;
+        background-color: white;
+         height: 652.141px;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+      
+      .l1{
+        font-family: lato, Arial;
+        color: rgb(10, 10, 35);
+        font-size: 24px;
+        margin-top: 24px;
+        margin-bottom: 40px;
+      }
+
+      .sign-button{
+        border-width: 3px;
+        border-color: rgb(210, 202, 206);
+        border-style: solid;
+        background-color: white;
+        width: 314px;
+        height: 52px;
+        margin-bottom: 8px;
+      }
+
+      .sign-button:hover{
+        cursor: pointer;
+        background-color: rgba(210, 202, 206, 0.308);;
+      }
+
+      .symbol{
+        flex: 0.13;
+        height: 30px;
+      }
+
+      .text{
+        flex: 1;
+        text-align: left;
+        padding-left: 5%;
+        padding-top: 2%;
+        color: rgb(10, 10, 35);
+        font-size: 16px;
+        font-family: Lato, Arial;
+      }
+
+      .email{
+        margin-top:30px ;
+        margin-bottom: 30px;
+        height: 52px;
+        width: 314px;
+        border-width: 2px;
+        border-color: black ;
+        border-style: solid;
+      }
+
+      .continue-button{
+        border-width: 0px;
+        height: 54px;
+        width: 320px;
+        background-color: rgb(241,190, 50);
+        font-family: lato, arial;
+        font-size: 16px;
+        color: rgb(10, 10, 35);
+        margin-bottom: 25px;
+      }
+
+      .continue-button:hover{
+        cursor: pointer;
+        background-color: rgb(192, 153, 45);
+      }
+      
+      .no-acc{
+        font-family: lato, arial;
+        font-size: 18px;
+        color: rgb(10, 10, 35);
+      }
+
+      .sign-up{
+        color: #5650f8;
+      }
+
+      .sign-up:hover{
+        cursor: pointer;
+      }
+
+      .end{
+        display: flex;
+        flex-direction: row;
+        margin-top: 80px;
+      }
+
+      .end-middle{
+        flex:3;
+        text-align: center;
+        font-size: 14px;
+        line-height: 25px;
+        font-family: lato,arial;
+        color: rgb(37, 37, 37);
+      }
+
+      .condition{
+        color: #002ead;
+        cursor: pointer;
+      }
+
+    </style>
+  </head>
+  <body style="background-color: rgb(207, 207, 207);">
+
+
+    <!--top bar-->
+
+    <div class="fixed-top-bar">
+      <div class="top-bar">
+        freeCodeCamp  
+        <img src="free-code-camp.svg" height="40px"> 
+      </div>
+    </div>
+
+    <div class="parent">
+      <div style="flex: 1;"></div>
+      <div class="border"> 
+        <div style="margin-top: 40px;">
+          <img src="free-code-camp sign.svg" height="25px">
+        </div>
+
+        <div class="l1">
+          Log in to freeCodeCamp <br>Learn
+        </div>
+
+        <!--first three buttons-->
+
+        <div>
+          <button class="sign-button">
+            <div style="display: flex; flex-direction: row;" >
+              <div class="symbol">
+                <img src="google.svg" height="30px">
+              </div>
+              <div class="text">Continue wiht Google</div>
+            </div>
+          </button>
+        </div>
+
+
+        <div>
+          <button class="sign-button">
+            <div style="display: flex; flex-direction: row;" >
+              <div class="symbol">
+                <img src="github.svg" height="30px">
+              </div>
+              <div class="text">Continue wiht GitHub</div>
+            </div>
+          </button>
+        </div>
+
+
+        <div>
+          <button class="sign-button">
+            <div style="display: flex; flex-direction: row;" >
+              <div class="symbol">
+                <img src="apple sign.svg" height="30px">
+              </div>
+              <div class="text">Continue wiht Apple</div>
+            </div>
+          </button>
+        </div>
+        
+        <div style="display: flex; flex-direction: row; margin-top: 10px;">
+          <div style="flex: 1;"><hr style="color: rgb(10, 10, 35); flex: 1;"></div>
+          <div style="flex: 0.5;">OR</div>
+          <div style="flex: 1;"><hr style="color: rgb(10, 10, 35);"></div>
+        </div>
+
+        <div >
+          <input class="email" type="text" placeholder="Email addrress">
+        </div>
+
+        <div>
+          <button class="continue-button">
+            Continue with Email
+          </button>
+        </div>
+
+        <div class="no-acc">
+          Don't have an account yet?<span class="sign-up"><b>Sign up</b></span> 
+        </div>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+    <div class="end">
+      <div style="flex: 1;"></div>
+      <div class="end-middle">
+        freeCodeCamp is free and your account is private by default.
+         We use your email address to connect you to your account.<br>
+        You must be at least 13 years old to create an account on freeCodeCamp.<br>
+        By continuing, you indicate that you have read and agree to freeCodeCamp.org's
+        <span class="condition">Terms of Service</span> and <span class="condition">Privacy Policy.</span>
+      </div>
+      <div style="flex: 1; "></div>
+    </div>
+
+  </body>
+</html>
