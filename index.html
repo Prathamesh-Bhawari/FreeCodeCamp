@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Learn to Code &#8212; For Free &#8212; Coding Course for Busy People freecodecamp.org
+    </title>
+
+    <style>
+
+      .fixed-top-bar{
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        justify-content: center; 
+        position: fixed;
+        top: 0px;
+        left:0px;
+        right:0px;
+        column-gap: 30px;
+        background-color: rgb(10, 10, 35);
+
+      }
+
+      .div3{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 10px;
+      }
+
+      .sign-in{
+        text-align: center;
+        height: 30px;
+        align-items: center;
+        min-width: 30px;
+        width: 81.45px;
+        margin-top: 7px;
+        border-width: 3px;
+        border-color:rgb(255, 153, 0) ;
+        border-style: solid;
+        font-size: 18px;
+        font-family: Lato, sans-serif;
+        color: rgb(10, 10, 35);
+        background-color: rgb(250, 168, 45);
+        padding-left: 6px;
+        padding-right: 6px;
+      }
+
+      .sign-in:hover{
+        cursor: pointer;
+        background-color: rgb(253, 198, 116);
+        transition: 0.15s;
+      }
+
+      .menu{
+        height: 30px;
+        align-items: center;
+        min-width: 30px;
+        width: 81.45px;
+        margin-top: 7px;
+        border-width:1px ;
+        border-style: solid;
+        border-color: rgb(245, 246, 247);
+        background-color: rgb(10, 10, 35);
+        color: rgb(245, 246, 247);
+        font-family: Lato, sans-serif;
+        font-size: 18px ;
+      }
+
+
+      .menu:hover{
+        cursor: pointer;
+        background-color: rgb(245, 246, 247);
+        color: rgb(10, 10, 35);
+        transition: 0.15s;
+      }
+
+
+
+      .heading{
+        display: flex;
+        flex-direction: row;
+        top: 0px;
+        left:0px;
+        right:0px;
+        margin-top: 150px;
+      }  
+
+      .heading-middle{
+        color:rgb(245, 246, 247); 
+        font-family: Lato, sans-serif;
+        flex: 2;
+        font-size: 45px;
+        line-height: 90px;
+      }
+
+      .year{
+        display: flex;
+        flex-direction: row;
+        left:0px;
+        right:0px;
+        margin-top: 20px;
+      }
+
+      .year-middle{
+        color:rgb(245, 246, 247); 
+        font-family:Lato, sans-serif;
+        flex: 2;
+        font-size: 22.5px;
+      }
+
+      .company{
+        display: flex;
+        flex-direction: row;
+        left:0px;
+        right:0px;
+        margin-top: 20px;
+      }
+
+      .company-middle{
+        flex: 2;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .get-started{
+        display: flex;
+        flex-direction: row;
+        left:0px;
+        right:0px;
+        margin-top: 50px;
+      }
+
+
+      .get-started-middle{
+        background-color: white;
+        flex: 2;
+        font-size: 22.5px;
+      }
+
+      .get-started-button{
+        width: 500px;
+        max-width: 500px;
+        min-width: 30px;
+        height: 60px;
+        border-width: 3px;
+        border-style: solid;
+        border-color: rgb(252, 151, 0);
+        background-color: rgb(254, 172, 50);
+        font-size: 27px;
+        color: rgb(10, 10, 35);
+        font-family:sans-serif;
+      }
+
+      .get-started-button:hover{
+        cursor:pointer;
+        transition: 0.15s;
+        background-color: rgb(255, 185, 79);
+      }
+
+      .image{
+        display: flex;
+        flex-direction: row;
+        left:0px;
+        right:0px;
+        margin-top: 60px;
+      }
+
+      .image-middle{
+        flex: 2;
+        font-size: 20px;
+      }
+
+      .para1{
+        text-align: center;
+        font-family:Lato, sans-serif ;
+        margin-top: 5px;
+        color:rgb(245, 246, 247); ;
+      }
+      
+
+      .alumni-heading{
+        display: flex;
+        flex-direction: row;
+        left:0px;
+        right:0px;
+        height: 50px;
+      }
+
+      .alumni-heading-middle{
+
+        flex: 7;
+        text-align: center;
+        font-size: 45px;
+        color: rgb(245, 246, 247);
+        font-size: Lato, sans-serif;
+        font-weight: 700;
+      }
+
+      .shawn{
+        display: flex;
+        flex-direction: row;
+        left:0px;
+        right:0px;
+        height: 50px;
+        margin-top: 60px;
+      }
+
+
+      .shawn-l1{
+        color: rgb(245, 246, 247);
+        text-align: center;
+        font-size:23.4px ;
+        font-family:Lato, sans-serif ;
+        margin-top: 55px;
+      }
+
+      .shawn-l2{
+        color: rgb(245, 246, 247);
+        text-align: center;
+        font-size:21.26px ;
+        font-family:Lato, sans-serif ;
+      }
+
+      .shawn-l3{
+        color: rgb(245, 246, 247);
+        font-size:20 ;
+        font-family:Lato, sans-serif ;
+        line-height: 20px;
+        margin-left: 25px;
+      }
+
+      .sarah{
+        display: flex;
+        flex-direction: row;
+        left:0px;
+        right:0px;
+        margin-top: 370px;
+      }
+
+      .sarah-l1{
+        color: rgb(245, 246, 247);
+        text-align: center;
+        font-size:23.4px ;
+        font-family:Lato, sans-serif ;
+        margin-top: 55px;
+      }
+
+      .sarah-l2{
+        color: rgb(245, 246, 247);
+        text-align: center;
+        font-size:21.26px ;
+        font-family:Lato, sans-serif ;
+      }
+
+      .sarah-l3{
+        color: rgb(245, 246, 247);
+        font-size:20 ;
+        font-family:Lato, sans-serif ;
+        line-height: 20px;
+        margin-left: 25px;
+      }
+
+      .emma{
+        display: flex;
+        flex-direction: row;
+        left:0px;
+        right:0px;
+        margin-top: 60px;
+      }
+
+      .emma-l1{
+        color: rgb(245, 246, 247);
+        text-align: center;
+        font-size:23.4px ;
+        font-family:Lato, sans-serif ;
+        margin-top: 55px;
+      }
+
+      .emma-l2{
+        color: rgb(245, 246, 247);
+        text-align: center;
+        font-size:21.26px ;
+        font-family:Lato, sans-serif ;
+      }
+
+      .emma-l3{
+        color: rgb(245, 246, 247);
+        font-size:20 ;
+        font-family:Lato, sans-serif ;
+        line-height: 20px;
+        margin-left: 25px;
+      } 
+
+      .certificate{
+        display: flex;
+        flex-direction: row;
+        margin-top: 100px;
+        margin-bottom: 50px;
+      }
+
+      .certificate-middle{
+        font-style:bold;
+        flex: 3;
+        font-size: 45px;
+        color: rgb(245, 246, 247);
+        font-family:Lato, sans-serif ;
+      }
+
+      .buttons{
+        display: flex;
+        flex-direction: row; 
+      }
+        
+
+      .buttons-middle{
+        flex: 3;
+      }
+
+      .buttons-button{
+        color: rgb(245, 246, 247);
+        height: 80px;
+        width: 100%;
+        border-width: 3px;
+        border-style: solid;
+        border-color: rgb(245, 246, 247);
+        align-items: center;
+        background-color: rgb(59, 59, 79);
+        font-size: 19.8px;
+        margin-bottom: 10px;
+      }
+
+      .buttons-button:hover{
+        cursor: pointer;
+        background-color: rgb(245, 246, 247);
+        color: rgb(10, 10, 35);
+        transition: 0.15s;
+      }
+
+
+      .english{
+        display: flex;
+        flex-direction: row;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+
+
+      .question-flex{
+        display: flex;
+        flex-direction:row ;
+      }
+
+
+      .question-middle{
+        flex: 4;
+      }
+
+
+      .q-heading-flex{
+        font-style:bold;
+        display: flex;
+        flex-direction: row;
+        margin-top: 80px;
+        margin-bottom: 30px;
+      }
+
+      .q-heading-middle{
+        font-style:bold;
+        flex: 4;
+        font-size: 45px;
+        color: rgb(245, 246, 247);
+        font-family:Lato, sans-serif ;
+      }
+      
+
+
+      .question{
+        font-size: 22.5px;
+        color: rgb(245, 246, 247);
+        margin-bottom: 21.6;
+      }
+
+
+      .answer{
+        font-family:Lato, sans-serif ;
+        color: rgb(245, 246, 247);
+        margin-bottom: 21.6;
+        font-size: 18;
+        line-height: 25px;
+      }
+
+
+      .footer-parent{
+          display: flex;
+          flex-direction: row;
+          background-color: rgb(59, 59, 79);
+          margin-top: 50px;
+        }
+
+        .footer-middle{
+          display: flex;
+          flex-direction: column;
+          flex: 15;
+        }
+
+        .footer-para{
+          color: rgb(223, 223, 226);
+          font-family: lato, sans-serif;
+          font-size: 16px;
+          margin-top: 21.6px;
+        }
+
+        .footer-para-last:hover{
+          cursor: pointer;
+        }
+
+        .guide-heading{
+          text-align: center;
+          color: rgb(223, 223, 226);
+          font-family: lato, sans-serif;
+          font-size: 16px;
+          margin-top: 60px;
+          transition: 0.15s;
+        }
+
+        .guide-parent{
+          display: flex;
+          flex-direction: row;
+          padding: 5%;
+          padding-right: 5%;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          background-color: rgb(59, 59, 79);
+          column-gap: 20px;
+          height: 300px;
+        }
+
+        .guide-1{
+          flex: 1;
+          color: rgb(223, 223, 226);
+          font-family: lato, sans-serif;
+          font-size: 15px;
+          line-height: 25px;
+        }
+
+        .guide-2{
+          flex: 1;
+          color: rgb(223, 223, 226);
+          font-family: lato, sans-serif;
+          font-size: 15px;
+          line-height: 25px;
+        }
+
+        .guide-3{
+          flex: 1;
+          color: rgb(223, 223, 226);
+          font-family: lato, sans-serif;
+          font-size: 15px;
+          line-height: 25px;
+        }
+
+        .hover:hover{
+          cursor: pointer;
+          text-decoration: underline;
+          transition: 0.15s;
+        }
+
+        .app{
+          display: flex;
+          flex-direction: row;
+          background-color: rgb(59, 59, 79);
+        }
+
+        .mobile-app{
+          flex:6; 
+          background-color: rgb(59, 59, 79);
+          color: rgb(245, 246, 247);
+          font-family: lato, sans-serif;
+          text-align: center;
+          font-size: 16px;
+        }
+
+        .app-button-flex{
+          flex: 6;
+          background-color: rgb(59, 59, 79);
+          align-items: center;
+          display: flex;
+          flex-direction: row;
+          column-gap: 4px;
+          padding-top: 15px;
+          height: 54px;
+        }
+
+        .img:hover{
+          cursor: pointer;
+        }
+
+
+        .bottom-hr{
+          display: flex;
+          flex-direction: row;
+          background-color: rgb(59, 59, 79);
+          padding-top: 40px;
+          padding-bottom: 30px;
+        }
+
+        .bottom-end{
+          display: flex;
+          flex-direction: row;
+          background-color: rgb(59, 59, 79);
+          font-family: lato, sans-serif;
+          color: rgb(245, 246, 247);
+          font-size:14px ;
+          padding-bottom: 10px;
+          padding-left: 5px;
+          padding-right: 5px;
+          text-align: center;
+        }
+
+        .search-flex{
+          display: flex;
+          flex-direction: row;
+          background-color: rgb(59, 59, 79);
+        }
+
+
+        .search-icon{
+          background-color: rgb(59, 59, 79);
+        }
+
+        .input-box{
+          font-family: lato, sans-serif;
+          width: 100%;
+          height: 100%;
+          background-color: rgb(59, 59, 79);
+          border: 0px;
+          color: rgb(245, 246, 247);
+        }
+    
+    </style>
+
+  </head>
+ 
+ 
+  <body style="background-color:rgb(27, 27, 50)";>
+
+
+    <!--heading till logo--> 
+
+    <div class="fixed-top-bar">
+      <div style="
+        flex: 2;
+        padding-top: 10px;"
+        >
+          <div class="search-flex">
+            <div class="search-icon">
+              <img src="search.svg" width="25px">
+            </div>
+            <div style="flex:1;">
+              <input  class="input-box" type="text" placeholder="Search 10,700+ tutorials">
+            </div>
+          </div>
+      </div>
+
+      <div style="
+        flex: 2;
+        font-size: 25px;
+        font-family: Lato, sans-serif;
+        color: rgb(245, 246, 247);
+        padding-top: 10px;"
+        > 
+          freeCodeCamp<img src="free-code-camp.svg" height="30px">
+      </div>0
+      <div style="
+        flex: 1;"
+        >
+          <div class="div3">
+            <div style="flex: 1;"></div>
+            <div style="flex: 1;">
+              <button class="menu">Menu</button>
+            </div>
+            <div style="flex: 1;">
+              <a href="signin.html"><button class="sign-in">Sign in</button></a>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="heading">
+      <div style="flex: 1;"></div>
+      <div class="heading-middle"><b>Learn to code — for free.
+       <br> Build projects.<br>Earn certifications.</b></div>
+      <div style="flex:1;"></div>
+    </div>
+
+
+    <div class="year">
+      <div style="flex: 1;"></div>
+      <div class="year-middle"><b>Since 2014, more than 40,000 freeCodeCamp.org 
+        graduates have gotten jobs at tech companies including:</b></div>
+      <div style="flex: 1;"></div>
+    </div>
+
+    <!--Companies symbols-->
+
+    <div class="company">
+      <div style="flex: 1;"></div>
+      <div class="company-middle">
+        <div style="flex: 1;"><abbr title="Apple"><img src="apple.svg" height="50px";></abbr></div>
+        <div style="flex:1; font-size: 30px; color: rgb(245, 246, 247);">
+          <p style="margin-top: 10px; margin-bottom: 0px;">Google</p>
+        </div>
+        <div style="flex:1;">
+         <abbr title="Microsoft"> <img src="microsoft.svg" height="50px"></abbr>
+        </div>
+        <div style="flex:1;">
+          <abbr title="Spotify"><img src="spotify.svg" height="50px"></abbr> 
+        </div>
+        <div style="flex:1;">
+          <abbr title="Amazon"><img src="amazon.svg" height="50px"></abbr> 
+        </div>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+    <!--Get started button--> 
+
+
+    <div class="get-started">
+      <div style="flex: 1;"></div>
+      <div class="get-started-midd">
+        <button class="get-started-button">
+          Get started (it's free)
+        </button>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+    <!--fist image--> 
+
+    <div class="image">
+      <div style="flex: 1; "></div>
+      <div class="image-middle">
+        <img src="image1.png" alt="group-photo">
+        <p class="para1">freeCodeCamp students at a local study group in South Korea.</p>
+      </div>
+      <div style="flex: 1; "></div>
+    </div>
+     
+    <!--3 alumni-->
+    <div class="alumni-heading">
+      <div style="flex: 1; "></div>
+      <div class="alumni-heading-middle">Here is what our alumni say about freeCodeCamp:</div>
+      <div style="flex: 1; "></div>
+    </div> 
+
+    <!--shawan-->
+
+    <div class="shawn">
+      <div style="flex: 1.5;"></div>
+      <div style="flex: 8.1"><img src="shawn.png" alt="Shawn Wang"></div>
+      <div style="flex: 21.4; background-color: rgb(10, 10, 35);
+      height:350px;">
+        <p class="shawn-l1">Shawn Wang in Singapore<br></p>
+        <p class="shawn-l2">Software Engineer at <b>Amazon</b><br></p>
+        <p class="shawn-l3">"It's scary to change careers. 
+          I only gained confidence that I could code by
+          working through the hundreds of hours of free lessons
+          on freeCodeCamp. Within a year I had a six-figure
+          job as a Software Engineer.
+          <b>freeCodeCamp changed my life."</b></p>
+      </div>
+      <div style="flex: 1.5;"></div>
+    </div>
+
+    <!--sarah-->
+
+    <div class="sarah">
+      <div style="flex: 1.5;"></div>
+      <div style="flex:8.1;"><img src="sarah.png" alt="Sarah Chima"></div>
+      <div style="flex: 21.4; background-color: rgb(10, 10, 35);">
+        <p class="sarah-l1">Sarah Chima in Nigeria</p>
+        <p class="sarah-l2">Software Engineer at ChatDesk</p>
+        <p class="sarah-l3">"freeCodeCamp was the gateway to my career as a software developer. The well-structured curriculum took my coding knowledge from a total beginner level to a very confident level. It was everything I needed to land my first dev job at an amazing company."</p>
+      </div>
+      <div style="flex: 1.5;"></div>
+    </div>
+
+    <!--emma-->
+
+    <div class="emma">
+      <div style="flex: 1.5;"></div>
+      <div style="flex:8.1;"><img src="emma.png" alt="Emma Bostian"></div>
+      <div style="flex: 21.4; background-color: rgb(10, 10, 35);">
+        <p class="emma-l1">Emma Bostian in Sweden</p>
+        <p class="emma-l2">Software Engineer at Spotify</p>
+        <p class="emma-l3">"I've always struggled with learning JavaScript.
+           I've taken many courses but freeCodeCamp's course was the one which stuck. Studying JavaScript as well as
+            data structures and algorithms on freeCodeCamp gave me the skills and confidence I needed to land my dream job as a 
+            software engineer at Spotify."</p>    
+      </div>
+      <div style="flex: 1.5;"></div>
+    </div>
+
+    <!--get started button-->
+
+    <div class="get-started">
+      <div style="flex: 1;"></div>
+      <div class="get-started-midd">
+        <button class="get-started-button">
+          Get started (it's free)
+        </button>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+    <!--certificate-->
+
+    <div class="certificate">
+      <div style="flex: 1;"></div>
+      <div class="certificate-middle"> 
+        Earn free verified certifications with freeCodeCamp's 
+        core curriculum:
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+
+    <!--buttons-->
+
+    <div class="buttons">
+      <div style="flex: 1;"></div>
+      <div class="buttons-middle">
+        <button class="buttons-button">
+          Responsive Web Design Certification
+        </button>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+    <div class="buttons">
+      <div style="flex: 1;"></div>
+      <div class="buttons-middle">
+        <button class="buttons-button">
+          JavaScript Alogorithms and Data Structures (Beta) Certification
+        </button>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+    <div class="buttons">
+      <div style="flex: 1;"></div>
+      <div class="buttons-middle">
+        <button class="buttons-button">
+          Front End Development Libraries Certification
+        </button>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+    <div class="buttons">
+      <div style="flex: 1;"></div>
+      <div class="buttons-middle">
+        <button class="buttons-button">
+          Data Visualization Certification
+        </button>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+
+    <div class="buttons">
+      <div style="flex: 1;"></div>
+      <div class="buttons-middle">
+        <button class="buttons-button">
+          Relation Database Certification
+        </button>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+    <div class="buttons">
+      <div style="flex: 1;"></div>
+      <div class="buttons-middle">
+        <button class="buttons-button">
+          Back End Development and APIs Certification
+        </button>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+    
+
+    <div class="buttons">
+      <div style="flex: 1;"></div>
+      <div class="buttons-middle">
+        <button class="buttons-button">
+          Quality Assurance Certification
+        </button>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+
+    <div class="buttons">
+      <div style="flex: 1;"></div>
+      <div class="buttons-middle">
+        <button class="buttons-button">
+          Scientific Computing with Pyhton (Beta) Certification
+        </button>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+
+    <div class="buttons">
+      <div style="flex: 1;"></div>
+      <div class="buttons-middle">
+        <button class="buttons-button">
+          Data Analysis with Python Certification
+        </button>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+
+    <div class="buttons">
+      <div style="flex: 1;"></div>
+      <div class="buttons-middle">
+        <button class="buttons-button">
+          Information Security Certification
+        </button>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+
+    <div class="buttons">
+      <div style="flex: 1;"></div>
+      <div class="buttons-middle">
+        <button class="buttons-button">
+          Machine Learing with Python Certification
+        </button>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+
+    <div class="buttons">
+      <div style="flex: 1;"></div>
+      <div class="buttons-middle">
+        <button class="buttons-button">
+          College Algebra wiht Python Certification
+        </button>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+
+    <div class="english">
+      <div style="flex: 1;"></div>
+      <div class="certificate-middle"> 
+        Learn English for Developers:
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+
+    <div class="buttons">
+      <div style="flex: 1;"></div>
+      <div class="buttons-middle">
+        <button class="buttons-button">
+          A2 English for Developers (beta) Certification
+        </button>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+
+    <div class="english">
+      <div style="flex: 1;"></div>
+      <div class="certificate-middle"> 
+        Earn free professional certifications:
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+    
+    <div class="buttons">
+      <div style="flex: 1;"></div>
+      <div class="buttons-middle">
+        <button class="buttons-button">
+          (New) Foundation C# with Microsoft Certification
+        </button>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+
+    <div class="english">
+      <div style="flex: 1;"></div>
+      <div class="certificate-middle"> 
+        Prepare for the developer interview job search:
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+
+    <div class="buttons">
+      <div style="flex: 1;"></div>
+      <div class="buttons-middle">
+        <button class="buttons-button">
+          The Odin Project - freeCodeCamp Remix (beta)
+        </button>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+
+    <div class="buttons">
+      <div style="flex: 1;"></div>
+      <div class="buttons-middle">
+        <button class="buttons-button">
+          Coding Interview Prep
+        </button>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+
+    <div class="buttons">
+      <div style="flex: 1;"></div>
+      <div class="buttons-middle">
+        <button class="buttons-button">
+          Project Euler
+        </button>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+
+    <div class="buttons">
+      <div style="flex: 1;"></div>
+      <div class="buttons-middle">
+        <button class="buttons-button">
+          Rosetta Code
+        </button>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+
+
+    <div class="english">
+      <div style="flex: 1;"></div>
+      <div class="certificate-middle"> 
+        Explore our Legacy Curriculum:
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+
+    <div class="buttons">
+      <div style="flex: 1;"></div>
+      <div class="buttons-middle">
+        <button class="buttons-button">
+          Legacy Responsive Web Design Challenges
+        </button>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+
+    <div class="buttons">
+      <div style="flex: 1;"></div>
+      <div class="buttons-middle">
+        <button class="buttons-button">
+          JavaScript algorithms and Data Structures certification 
+        </button>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+
+    <div class="buttons">
+      <div style="flex: 1;"></div>
+      <div class="buttons-middle">
+        <button class="buttons-button">
+          Legacy Python for Everbody
+        </button>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+
+    <!--get started button-->
+
+    <div class="get-started">
+      <div style="flex: 1;"></div>
+      <div class="get-started-midd">
+        <button class="get-started-button">
+          Get started (it's free)
+        </button>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+
+    <div class="q-heading-flex">
+      <div style="flex: 1;"></div>
+      <div class="q-heading-middle"> 
+        Frequently asked questions:
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+
+    <div class="question-flex">
+      <div style="flex:1;"></div>
+      <div class="question-middle">
+        <p class="question"><b>What exactly is freeCodeCamp?</b></p>
+        <p class="answer">freeCodeCamp is a community of people from all around the world 
+          who are learning to code together. We're a 501(c)(3) public charity.</p>
+        
+          <p class="question"><b>
+        How will freeCodeCamp help me learn to code?</b></p>
+        <p class="answer">You will learn to code by building dozens of projects, step-by-step, right in your browser, code editor, or mobile app.</p>  
+        
+        <p class="question"><b>How will freeCodeCamp help me learn to code?</b></p>
+        <p class="answer">You will learn to code by building dozens of projects, step-by-step, right in your browser, code editor, or mobile app.</p>
+
+        <p class="question"><b>
+          Is freeCodeCamp really free?</b></p>
+        <p class="answer">Yes. Every aspect of freeCodeCamp is 100% free. The courses, the projects, and even the certifications.</p>
+
+        <p class="question"><b>Can freeCodeCamp help me get a job as a software developer?</b></p>
+        <p class="answer">Yes. Every year, thousands of people who join the freeCodeCamp community get their first software developer job.</p>
+
+        <p class="question"><b>What skills will I learn?</b></p>
+        <p class="answer">You will learn the skills most developers use on the job: HTML, CSS, JavaScript, Python, Linux, Git, and SQL, and more. You'll also learn how to use powerful libraries for web development, mobile app development, data science, and artificial intelligence.</p>
+
+        <p class="question"><b>How long does it take to learn all this?</b></p>
+        <p class="answer">freeCodeCamp is self-paced. Realistically, it may take several years of practicing coding to learn these skills well enough to get a job as a software engineer. Don't quit school or your day job until you feel ready.</p>
+
+        <p class="question"><b>
+          How do I get started?</b></p>
+        <p class="answer">If you're a beginner, you should start at the beginning of the freeCodeCamp core curriculum. If you're more advanced, we still recommend starting at the beginning, but you can skip to whatever area you wish.</p>
+
+        <p class="question"><b>How do I earn the free verified certifications?</b></p>
+        <p class="answer">For each certification, you need to build its 5 certification projects, and get all of the project tests to pass to be able to claim your certification.</p>
+
+        <p class="question"><b>I don't see [name of tool] in the freeCodeCamp core curriculum.</b></p>
+        <p class="answer">Aside from the freeCodeCamp core curriculum, We have thousands of free, full-length books, courses, and programming tutorials. We almost certainly teach whatever programming tools you want to learn. Just use the search bar.</p>
+      
+        <p style="font-size: 19.8px; font-family: Hack-ZeroSlash, monospace; color: rgb(245, 246, 247);">
+          <b>Happy Coding!</b>
+        </p>
+      </div>
+      <div style="flex:1;"></div>
+    </div>
+
+    <!--Get started button-->
+    
+    <div class="get-started">
+      <div style="flex: 1;"></div>
+      <div class="get-started-midd">
+        <button class="get-started-button">
+          Get started (it's free)
+        </button>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+
+    <!--footer-->
+
+    <div class="footer-parent">
+      <div style="flex: 1;"></div>
+      <div class="footer-middle">
+        <div>
+          <p class="footer-para">
+            freeCodeCamp is a donor-supported tax-exempt 501(c)(3) 
+            charitable organization (United States Federal Tax Identification Number: 82-0779546)
+          </p>
+        </div>
+
+        <div>
+          <p class="footer-para">
+            Our mission: to help people learn to code for free. 
+            We accomplish this by creating thousands of videos, articles, 
+            and interactive coding lessons - all freely available to the public.
+          </p>
+        </div>
+
+        <div>
+          <p class="footer-para" style="margin-bottom: 21.6px;">
+            Donations to freeCodeCamp go toward our 
+           education initiatives, and help pay for servers, services, and staff.
+          </p>
+        </div>
+
+        <div class="footer-para" style="font-size: 18px;">
+          <b>You can <span class="footer-para-last">
+            <u>
+              make a tax-deductible donation here.
+            </u></span></b>
+        </div>
+
+        <div class="guide-heading">
+          <b>Trending Guides</b>
+        </div>
+
+      </div>
+    <div style="flex: 1;"></div>
+    </div>
+
+    <div class="guide-parent">
+      <div class="guide-1">
+        <span class="hover">Binary Search in C++<br></span>
+        <span class="hover">List Flatten in Python<br></span>
+        <span class="hover">JS Comparison Operators<br></span>
+        <span class="hover">Python Remove from List<br></span>
+        <span class="hover">Operators in C<br></span>
+        <span class="hover">What is R Squared?<br></span>
+        <span class="hover">Gradient Descent ML<br></span>
+        <span class="hover">Bash Scripting Tutorial<br></span>
+        <span class="hover">Static Variables in Java<br></span>
+        <span class="hover">Install Node.js on Ubuntu<br></span>
+        <span class="hover"><br></span>
+        
+      </div>
+      <div class="guide-2">
+        <span class="hover">Binary Search in Java<br></span>
+        <span class="hover">Python Print Exception<br></span>
+        <span class="hover">Python Program Examples<br></span>
+        <span class="hover">Pip Upgrade<br></span>
+        <span class="hover">Dataframe to CSV<br></span>
+        <span class="hover">Git Squash Commits<br></span>
+        <span class="hover">JS Ternary Operator<br></span>
+        <span class="hover">Create an Array in Java<br></span>
+        <span class="hover">What Does => Mean in JS?<br></span>
+        <span class="hover">SQL Where Contains String<br></span>
+      </div>
+      <div class="guide-3">
+        <span class="hover">Lambda Sort in Python<br></span>
+        <span class="hover">Enhanced Java for-loops<br></span>
+        <span class="hover">Create a Dict in Python<br></span>
+        <span class="hover">Undo Git Add<br></span>
+        <span class="hover">JavaScript Replace<br></span>
+        <span class="hover">Integer Array in C<br></span>
+        <span class="hover">Print Newline in Python<br></span>
+        <span class="hover">Trim a String in Python<br></span>
+        <span class="hover">Python Iterate Over Dict<br></span>
+        <span class="hover">How to Join Lists in Python<br></span>
+      </div>
+    </div>
+
+    <div class="app" >
+      <div style="flex: 9;"></div>
+      <div class="mobile-app"><b>Mobile App</b></div>
+      <div  style="flex: 1;"></div>
+    </div>
+
+    <div class="app">
+      <div style="flex: 9;"></div>
+        <div class="app-button-flex">
+          <div style="flex: 1;">
+            <img  class="img"src="apple-store.svg" width="171px">
+          </div>
+          <div style="flex:1;">
+            <img class="img"src="google-app.svg" width="171px">
+          </div>  
+            
+        </div>
+      </div>
+      <div  style="flex: 1; "></div>
+    </div>
+
+
+    <div class="bottom-hr">
+      <div style="flex: 1;"></div>
+      <div style="flex: 8;"><hr class="hr"></div>
+      <div style="flex: 1;"></div>
+    </div>
+
+    <div class="bottom-end">
+      <div style="flex:1;" ><span class="hover">About</span></div>
+      <div style="flex:2;"><span class="hover">Alumni Network</span></div>
+      <div style="flex:2;"><span class="hover">Open Source</span></div>
+      <div style="flex:1;"><span class="hover">Shop</span></div>
+      <div style="flex:1;"><span class="hover">Support</span></div>
+      <div style="flex:1;"><span class="hover">Sponsors</span></div>
+      <div style="flex:2;"><span class="hover">Academic Honesty</span></div>
+      <div style="flex:2;"><span class="hover">Code of Conduct</span></div>
+      <div style="flex:2;"><span class="hover">Privacy Policy</span></div>
+      <div style="flex:2;"><span class="hover">Terms of Service</span></div>
+      <div style="flex:2;"><span class="hover">Copyright Policy</span></div>
+    </div>
+
+
+
+  </body>
+</html>
